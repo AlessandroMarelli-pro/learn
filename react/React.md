@@ -1227,6 +1227,10 @@ function Settings() {
 }
 ```
 
+> ⚠️ **Pitfalls (Read Carefully)**
+>
+> If hooks were called conditionally, it would break the sequence, making it impossible for React to correctly associate each hook with the correct state or cleanup function. That's why React enforces the rule of calling hooks at the top level and always in the same order.
+
 ---
 
 ## Context API
